@@ -103,6 +103,8 @@ nav:
     - Preferences: main_pages/other classes/preferences.md
 
 
+  - License: License.md
+
 markdown_extensions:
   - admonition
   - pymdownx.highlight
