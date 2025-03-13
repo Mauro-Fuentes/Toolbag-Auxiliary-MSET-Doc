@@ -1,0 +1,20 @@
+footer {
+    display: block !important;
+    position: relative;
+    background: #8bd720;
+    color: white;
+    padding: 1px;
+}
+
+.md-footer {
+    background: rgb(216, 114, 19) !important;  /* Just to check if it's working */
+    padding: 1px 0;
+    width: auto;     /* Allow dynamic width */
+    font-size: 9px;
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+.md-footer__inner {
+    max-width: 100%;
+}

@@ -1,0 +1,131 @@
+
+site_name: TOOLBAG AUXILIARY MSET Module Documentation
+
+theme:
+  name: material
+  custom_dir: ./docs/overrides
+  # palette:
+  #   scheme: default
+  #   primary: custom
+
+  font:
+    text: Merriweather
+    text: Fira Sans
+    text: Libre Baskerville
+    # text: PT Serif
+    # text: Roboto
+    code: DM Sans
+    code: Merriweather
+    # code: PT Serif
+
+  language: en
+  logo: "images/MonkeyHead.ico"
+  favicon: "images/MonkeyHead.ico"
+  features:
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link  
+    # - navigation.footer
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.indexes # Check Section index pages
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - navigation.prune # Investigate a bit more about this
+
+    - search.highlight
+
+    # - header.autohide
+    - toc.follow
+    - toc.integrate # show right side menu or integrate it on the right?
+
+  palette:
+    - scheme: slate
+      toggle: 
+        icon: material/weather-night
+        name: noc
+      
+    - scheme: naranja
+      # primary: deep orange
+      # secondary: red
+      # accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: orange
+
+extra_css:
+  # - stylesheets/custom_footer.css
+  - stylesheets/custom_palettes_mode.css
+  - stylesheets/custom_titles.css
+  # - stylesheets/center_image.css
+  - stylesheets/mermaid.css
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/marmosetco
+
+    - icon: fontawesome/brands/facebook
+      link: https://github.com/marmosetco
+
+nav:
+  - TAMMDoc: index.md
+
+  - User Interface: main_pages/user_interface/ui.md
+  
+  - Callbacks: 
+      main_pages/functions/callbacks.md
+
+  - Core Functions: 
+    - Core Functions: main_pages/functions/core_functions.md
+    - Camera: main_pages/functions/camera_frame.md
+    - Bake: main_pages/functions/bake.md
+    - Export: main_pages/functions/export.md
+    - Render: main_pages/functions/render.md
+    - Log: main_pages/functions/log.md
+    - Dialog: main_pages/functions/dialog.md
+    - Objects and Materials: main_pages/functions/objects_materials.md
+    - IO: main_pages/functions/IO.md
+    - Scene Info: main_pages/functions/scene_info.md
+    - Timeline: main_pages/functions/timeline.md
+    - Library: main_pages/functions/library.md
+    - Compression: main_pages/functions/image_process.md
+    - Store: main_pages/functions/store_item.md
+
+  - Entities:
+    - Entities: main_pages/classes/entities.md
+    - Moveable Objects: main_pages/classes/transform.md
+    - Fixed Objects: main_pages/classes/fixed_objects.md
+    # - Scene Object: main_pages/classes/scene_object.md
+    - Preferences: main_pages/other classes/preferences.md
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - macros
