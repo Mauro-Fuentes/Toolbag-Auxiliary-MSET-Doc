@@ -1,6 +1,8 @@
 
 site_name: TOOLBAG AUXILIARY MSET Module Documentation
 
+use_directory_urls: false
+
 theme:
   name: material
   custom_dir: ./docs/overrides
@@ -42,18 +44,15 @@ theme:
     - toc.integrate # show right side menu or integrate it on the right?
 
   palette:
+    - scheme: naranja
+      toggle:
+        icon: material/weather-sunny
+        name: orange
+
     - scheme: slate
       toggle: 
         icon: material/weather-night
         name: noc
-      
-    - scheme: naranja
-      # primary: deep orange
-      # secondary: red
-      # accent: orange
-      toggle:
-        icon: material/weather-sunny
-        name: orange
 
 extra_css:
   # - stylesheets/custom_footer.css

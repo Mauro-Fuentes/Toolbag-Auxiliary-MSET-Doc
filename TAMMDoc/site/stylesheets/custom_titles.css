@@ -1,0 +1,46 @@
+
+/* Apply a background color to custom headers */
+.custom-title {
+  background-color: #ff6e26;  /* Choose your background color */
+  color: rgb(8, 8, 8);  /* Text color */
+  padding: 10px 20px;  /* Padding around the text */
+  display: block;  /* Makes the title take full width */
+  width: 100%;  /* Ensures it spans the entire width */
+  border-radius: 5px;  /* Optional: makes corners rounded */
+  text-decoration: none;
+  border-radius: 0px; 
+}
+
+/* On hover: change the link color */
+/* .custom-title:hover {
+  color: rgb(255, 255, 255);
+} */
+
+/* If you want to customize the title link color when it's clicked (active) */
+/* .custom-title:active {
+  color: rgb(223, 255, 44);
+} */
+
+/* Style for all H2 headers (## in Markdown) */
+h2 {
+  background-color: #ff6e26;
+  color: rgb(17, 17, 17);
+  padding: 10px 20px;
+  display: inline-block;
+  width: 100%; /* remove if you just want a block */
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+h1 {
+  background-color: #ff6e26 !important;
+  color: rgb(17, 17, 17) !important;
+  padding: 1px 15px;
+  display: inline-block;
+  width: 100%; /* remove if you just want a block */
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 35px !important;
+}
+

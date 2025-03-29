@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block footer %}
+<footer class="md-footer">
+    <div class="md-footer__inner">
+        <p> 🚀 Created by Mauro Fuentes - All Rights Reserved.</p>
+    </div>
+</footer>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+  .md-footer {
+    padding: 1px 0;  /* Adjust top/bottom padding for smaller footer */
+    font-size: 150px;  /* Decrease font size */
+  }
+
+  .md-footer__inner {
+    max-width: 20%;  /* Make sure the inner content spans the full width */
+  }
+</style>
+{% endblock %}

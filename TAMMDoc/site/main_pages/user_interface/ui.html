@@ -1,0 +1,1434 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../index.html">
+      
+      
+        <link rel="next" href="../functions/callbacks.html">
+      
+      
+      <link rel="icon" href="../../images/MonkeyHead.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>User Interface - TOOLBAG AUXILIARY MSET Module Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300,300i,400,400i,700,700i%7CMerriweather:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Libre Baskerville";--md-code-font:"Merriweather"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom_palettes_mode.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/custom_titles.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="naranja" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#user-interface" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="TOOLBAG AUXILIARY MSET Module Documentation" class="md-header__button md-logo" aria-label="TOOLBAG AUXILIARY MSET Module Documentation" data-md-component="logo">
+      
+  <img src="../../images/MonkeyHead.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TOOLBAG AUXILIARY MSET Module Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="naranja" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="orange"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="orange" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="noc"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="noc" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="TOOLBAG AUXILIARY MSET Module Documentation" class="md-nav__button md-logo" aria-label="TOOLBAG AUXILIARY MSET Module Documentation" data-md-component="logo">
+      
+  <img src="../../images/MonkeyHead.ico" alt="logo">
+
+    </a>
+    TOOLBAG AUXILIARY MSET Module Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TAMMDoc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User Interface
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ui.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    User Interface
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uicontrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIControl
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uiwindow" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIWindow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIWindow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uidrawer" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIDrawer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIDrawer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uiscrollbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIScrollBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIScrollBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uibaseslider" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIBaseSlider
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIBaseSlider">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uisliderint" class="md-nav__link">
+    <span class="md-ellipsis">
+      UISliderInt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UISliderInt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uisliderfloat" class="md-nav__link">
+    <span class="md-ellipsis">
+      UISliderFloat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UISliderFloat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uibasetextfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIBaseTextField
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIBaseTextField">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uitextfield" class="md-nav__link">
+    <span class="md-ellipsis">
+      UITextField
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uitextfieldfloat" class="md-nav__link">
+    <span class="md-ellipsis">
+      UITextFieldFloat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uitextfieldint" class="md-nav__link">
+    <span class="md-ellipsis">
+      UITextFieldInt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uibutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIButton
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uicheckbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      UICheckBox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uicolorpicker" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIColorPicker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uilabel" class="md-nav__link">
+    <span class="md-ellipsis">
+      UILabel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uilistbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      UIListBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UIListBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instance-variables_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instance variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/callbacks.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Callbacks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../functions/core_functions.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Core Functions
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../classes/entities.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Entities
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../License.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="user-interface">User Interface</h1>
+<p>In this section, you'll find everything you need to create the UI for your addons.</p>
+<p>Understanding the core structure of the UI code is a valuable exercise for building a solid foundation.</p>
+<!-- - **UIControl**
+    - UIWindow
+    - UIDrawer
+    - UIScrollBox
+    - UIButton
+    - UILabel
+    - UICheckBox
+    - UIListBox
+    - UIBaseSlider
+        - UISliderInt
+        - UISliderFloat
+    - UIBaseTextField
+        - UITextField
+        - UITextFieldFloat
+        - UITextFieldInt
+    - UIColorPicker -->
+<!-- 
+<br> -->
+
+<pre class="mermaid"><code>
+graph LR
+    A[UIControl] --&gt; B[UIWindow]
+    A --&gt; C[UIDrawer]
+    A --&gt; D[UIScrollBox]
+    A --&gt; E[UIButton]
+    A --&gt; F[UILabel]
+    A --&gt; G[UICheckBox]
+    A --&gt; H[UIListBox]
+    A --&gt; P[UIColorPicker]
+    A --&gt; I[UIBaseSlider]
+    I --&gt; J[UISliderInt]
+    I --&gt; K[UISliderFloat]
+    A --&gt; L[UIBaseTextField]
+    L --&gt; M[UITextField]
+    L --&gt; N[UITextFieldFloat]
+    L --&gt; O[UITextFieldInt]
+</code></pre>
+<p><br></p>
+<p>All UI members inherit from UIControl, but not all are equally significant.
+The chart above is organized in a logical order, based on their functionality and importance.</p>
+<p><br> </p>
+<h2 id="uicontrol"><strong>UIControl</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <strong>UIControl</strong> is the base entity from which all UI elements derive. You don't use it directly.</p>
+</div>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+<p><br><br></p>
+<h2 id="uiwindow"><strong>UIWindow</strong></h2>
+<p><strong>UIWindow</strong> is the core component for any plugin UI in Marmoset Toolbag, serving as the foundation for rendering visuals. All plugin UIs begin by creating a UIWindow, to which other UI elements are added.</p>
+<p><br></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">()</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UIWindow.png" />
+</center></p>
+<p><br></p>
+<h3 id="class">Class</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UIWindow</span><span class="p">(</span><span class="n">UIControl</span><span class="p">):</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Class for creating a window. It is interesting to mention that you can create multiple windows.</p>
+
+<h3 id="instance-variables">Instance variables</h3>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">height</span><span class="w"> </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The height of the window in pixels.</p>
+
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">width</span><span class="w">  </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The width of the window in pixels.</p>
+
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">title</span><span class="w">  </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The title of the window.</p>
+
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">visible</span><span class="w">  </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">This returns true or false, depending on the state of the window.</p>
+
+<h3 id="methods">Methods</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">addElement</span><span class="p">(</span><span class="n">child</span><span class="p">:</span> <span class="n">UIControl</span><span class="p">)</span> 
+</span></code></pre></div>
+<p style="text-indent: 30px;">This is the main method through which you add elements inside the windows.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">addReturn</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Puts all following elements on the next line. </p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">addSpace</span><span class="p">(</span><span class="n">width</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">This adds emtpy space and puts all following elements after it. </p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">addStretchSpace</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Puts all following elements at the end of the line. </p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">clearElements</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Removes all elements from the window. </p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Closes the current window. </p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">getElements</span><span class="p">()</span> <span class="err">‑</span><span class="o">&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">UIControl</span><span class="p">]</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Returns a list of all contained controls. </p>
+
+<p><br></p>
+<hr />
+<p><br></p>
+<div class="language-python highlight"><span class="filename">multiple windows example</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">window1</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">()</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">window1</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Window 1&quot;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">window1</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">90</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">window1</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">250</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">window2</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">()</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">window1</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Window 2&quot;</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="n">window1</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="n">window1</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">300</span>
+</span></code></pre></div>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uidrawer"><strong>UIDrawer</strong></h2>
+<p><strong>UIDrawer</strong> is your next level tool when it comes to UI organization.
+A drawer is basically a container that lives inside a Window.
+It behaves like an on/off accordion.
+When it's on, it will displayed the content, and hide it when it's off.</p>
+<p>You don't really need to use it: all other UI elements can be directly added to the UIWindow. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You might be tempted to simply create a UIWindow and put a drawer inside, so you can add elements directly. But this is not the way it works.
+Both UIDrawer and UIScrollBox need their own UIWindow as a base.
+Once you have that UIWindow you need to hook up them up. </p>
+</div>
+<div class="language-python highlight"><span class="filename">example creating a simple UIDrawer</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># This is the main and the base window to create the UI</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">main_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;UI Test&quot;</span><span class="p">)</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># Here we will set up a new window just for the drawer</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">drawer</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIDrawer</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Settings&quot;</span><span class="p">)</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="n">drawer_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Drawer Window&quot;</span><span class="p">)</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="c1"># Here is where we link the new window and the drawer</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="n">drawer</span><span class="o">.</span><span class="n">containedControl</span> <span class="o">=</span> <span class="n">drawer_window</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1"># Notice you can add the button to the Drawer, or to the main_window</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="n">buttonA</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIButton</span><span class="p">(</span><span class="s2">&quot;Close Button&quot;</span><span class="p">)</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="n">drawer_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">buttonA</span><span class="p">)</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="n">main_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">drawer</span><span class="p">)</span>
+</span></code></pre></div>
+<p><br></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Of course you can add many UIDrawers.</p>
+</div>
+<div class="language-python highlight"><span class="filename">example creating lots of UIDrawer</span><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># This is the main and the base window to create the UI</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">main_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;UI Test&quot;</span><span class="p">)</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="c1"># Here we will set up a new window just for the drawer</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="n">drawer</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIDrawer</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Settings&quot;</span><span class="p">)</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">drawer_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Drawer Window&quot;</span><span class="p">)</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="c1"># Here is where we link the new window and the drawer</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="n">drawer</span><span class="o">.</span><span class="n">containedControl</span> <span class="o">=</span> <span class="n">drawer_window</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1"># Here we will set up a new window just for the drawer</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="n">drawerB</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIDrawer</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Settings&quot;</span><span class="p">)</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="n">drawerB_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Drawer Window&quot;</span><span class="p">)</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="n">drawerB</span><span class="o">.</span><span class="n">containedControl</span> <span class="o">=</span> <span class="n">drawerB_window</span>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="c1"># Notice you can add the button to the Drawer, or to the main_window</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="n">buttonA</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIButton</span><span class="p">(</span><span class="s2">&quot;Close Button&quot;</span><span class="p">)</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="n">drawer_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">buttonA</span><span class="p">)</span>
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>
+</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="n">drawerB_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">buttonA</span><span class="p">)</span>
+</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>
+</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="n">main_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">drawer</span><span class="p">)</span>
+</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="n">main_window</span><span class="o">.</span><span class="n">addReturn</span><span class="p">()</span>
+</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="n">main_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">drawerB</span><span class="p">)</span>
+</span></code></pre></div>
+<p><br></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There is a known bug: if you create and empty Drawer, Toolbag will crash.</p>
+</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">main_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;UI Test&quot;</span><span class="p">)</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">drawerA</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIDrawer</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Settings&quot;</span><span class="p">)</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="n">main_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">drawerA</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UIDrawer1.png" />
+</center></p>
+<p><center>
+<img alt="My Image" src="../../images/UIDrawer2.png" />
+</center></p>
+<h3 id="class_1">Class</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UIDrawer</span><span class="p">(</span><span class="n">UIControl</span><span class="p">):</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Class for creating a drawer: which basically is a container for smaller object.</p>
+
+<h3 id="instance-variables_1">Instance variables</h3>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">containedControl</span><span class="w"> </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">It's basically the UIWindow that gives the UIDrawer the hability to contain other UI elements</p>
+
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">onOpenClose</span><span class="w"> </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">A callback event that triggers when the drawer is opened or closed.</p>
+
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">open</span><span class="w"> </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Order the drawer to open or close</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">title</span><span class="w"> </span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The title of the drawer</p>
+
+<h3 id="methods_1">Methods</h3>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">def</span><span class="w"> </span><span class="nf">setMinor</span><span class="p">(</span><span class="n">minor</span><span class="p">:</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Whether or not the drawer is dimmer.</p>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There is a known bug: if you use setMinor, Toolbag will crash.</p>
+</div>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uiscrollbox"><strong>UIScrollBox</strong></h2>
+<p>UIScrollBox is the next type of Container at your disposal for UI organization.
+As with UIDrawer, UIScrollBox lives inside a Window.</p>
+<p>And it literally is a box with a scroll</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="n">scrollbox</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIScrollBox</span><span class="p">()</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">scrollbox</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UIScrollBox.png" />
+</center></p>
+<p><br></p>
+<p>In the same way UIDrawer needed its own window, UIScrollBox also needs it.</p>
+<div class="language-python highlight"><span class="filename">example creting a ScrollBox</span><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="c1"># create the window for the ScrollBox</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="n">scrollbox_window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">()</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="n">scrollbox</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIScrollBox</span><span class="p">()</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="n">scrollbox</span><span class="o">.</span><span class="n">containedControl</span> <span class="o">=</span> <span class="n">scrollbox_window</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="n">buttonA</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIButton</span><span class="p">(</span><span class="s2">&quot;Close Button&quot;</span><span class="p">)</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="n">scrollbox_window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">buttonA</span><span class="p">)</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">scrollbox</span><span class="p">)</span>
+</span></code></pre></div>
+<p><br></p>
+<h3 id="class_2">Class</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UIScrollBox</span><span class="p">(</span><span class="n">UIControl</span><span class="p">):</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Class for creating a ScrollBox: which basically is a scrollable container.</p>
+
+<h3 id="instance-variables_2">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">var</span> <span class="n">containedControl</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">As with UIDrawer, the containedControl is basically the UIWidnow that will let the ScrollBox have the ability to add elements inside</p>
+
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uibaseslider"><strong>UIBaseSlider</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is just an abstract class. Don't use it directly. Use <strong>UISliderInt</strong> and <strong>UISliderFloat</strong> instead. See below 👇</p>
+</div>
+<h3 id="instance-variables_3">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">var</span> <span class="n">onChange</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">A callback event that triggers when the slider value changes</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">var</span> <span class="n">width</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The width of the control.</p>
+
+<p><br></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Don't forget all Subclasses will inherit these two variables 👆<br />
+Check Callbacks if you have any doubts</p>
+</div>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uisliderint"><strong>UISliderInt</strong></h2>
+<p>This is a slider that counts using integers</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="n">sliderInt</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UISliderInt</span><span class="p">()</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">sliderInt</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UISliderInt.png" />
+</center></p>
+<h3 id="class_3">Class</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UISliderInt</span><span class="p">(</span><span class="n">UIBaseSlider</span><span class="p">):</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Class for creating a UISliderInt.</p>
+
+<h3 id="instance-variables_4">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">var</span> <span class="n">logScale</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The logarithmic exponent of the slider.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">var</span> <span class="n">logScaleCenter</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The center of the logarithmic scale of the slider.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">var</span> <span class="nb">max</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The maximum value of the slider range.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">var</span> <span class="nb">min</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The minimum value of the slider range.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">var</span> <span class="n">value</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The value of the slider.</p>
+
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uisliderfloat"><strong>UISliderFloat</strong></h2>
+<p>This is a slider that counts using floats</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="n">sliderFloat</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UISliderFloat</span><span class="p">()</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">sliderFloat</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UISliderFloat.png" />
+</center></p>
+<h3 id="class_4">Class</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">UISliderFloat</span><span class="p">(</span><span class="n">UIBaseSlider</span><span class="p">):</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Class for creating a UISliderInt.</p>
+
+<h3 id="instance-variables_5">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">var</span> <span class="n">logScale</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The logarithmic exponent of the slider.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">var</span> <span class="n">logScaleCenter</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The center of the logarithmic scale of the slider.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">var</span> <span class="nb">max</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The maximum value of the slider range.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">var</span> <span class="nb">min</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The minimum value of the slider range.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="n">var</span> <span class="n">value</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The value of the slider.</p>
+
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<p><br></p>
+<h2 id="uibasetextfield"><strong>UIBaseTextField</strong></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is just an abstract class. Don't use it directly. Use <strong>UITextField</strong>, <strong>UITextFieldFloat</strong> or <strong>UITextFieldInt</strong> instead. See below 👇</p>
+</div>
+<h3 id="instance-variables_6">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="n">var</span> <span class="n">onCancel</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">A callback that is triggered when the editing is canceled.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">var</span> <span class="n">onChange</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">A callback that is triggered when any editing is done.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">var</span> <span class="n">width</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The width of the element</p>
+
+<p><br></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Don't forget all Subclasses will inherit these two variables 👆<br />
+Check Callbacks if you have any doubts</p>
+</div>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uitextfield"><strong>UITextField</strong></h2>
+<p>Enter text</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-46-4"><a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="n">textField</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UITextField</span><span class="p">()</span>
+</span><span id="__span-46-5"><a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">textField</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UITextField.png" />
+</center></p>
+<p><br></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">var</span> <span class="n">value</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The content of the text field.</p>
+
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uitextfieldfloat"><strong>UITextFieldFloat</strong></h2>
+<p>Same as TextField but this version works with float numbers</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-48-4"><a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="n">textFieldFloat</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UITextFieldFloat</span><span class="p">()</span>
+</span><span id="__span-48-5"><a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">textFieldFloat</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UITextFieldFloat.png" />
+</center></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uitextfieldint"><strong>UITextFieldInt</strong></h2>
+<p>UI text field that exclusively works with int values.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a><span class="n">textFieldInt</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UITextFieldInt</span><span class="p">()</span>
+</span><span id="__span-49-5"><a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">textFieldInt</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UITextFieldInt.png" />
+</center></p>
+<p><br></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uibutton"><strong>UIButton</strong></h2>
+<p>Add a button to perfom an action when clicked.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a><span class="n">myButton</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIButton</span><span class="p">(</span><span class="s2">&quot;click me&quot;</span><span class="p">)</span> <span class="c1">#dont forget to add a name like &#39;click me&#39;</span>
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">myButton</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UIButton.png" />
+</center></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uicheckbox"><strong>UICheckBox</strong></h2>
+<p>A small square box that can be checked or unchecked to toggle an option on or off.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>
+</span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="n">myCheckBox</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UICheckBox</span><span class="p">()</span>
+</span><span id="__span-51-5"><a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">myCheckBox</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The images has two checkboxes, to show you both states.
+<center>
+<img alt="My Image" src="../../images/UICheckBox.png" />
+</center></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uicolorpicker"><strong>UIColorPicker</strong></h2>
+<p>A small square box that can be checked or unchecked to toggle an option on or off.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a>
+</span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-52-4"><a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a><span class="n">myColorPicker</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIColorPicker</span><span class="p">()</span>
+</span><span id="__span-52-5"><a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">myColorPicker</span><span class="p">)</span>
+</span></code></pre></div>
+<!-- most probably I need to circle the little square to improve the readability of the image -->
+<p>Click on the little square to actually open the Color Picker Popup</p>
+<p><center>
+<img alt="My Image" src="../../images/UIColorPicker.png" />
+</center></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uilabel"><strong>UILabel</strong></h2>
+<p>Very similar to <strong>UITextField</strong>, but this text is not inside a box.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="n">myLabel</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UILabel</span><span class="p">(</span><span class="s2">&quot;My label&quot;</span><span class="p">)</span> <span class="c1"># 👈 remember to actually add a label</span>
+</span><span id="__span-53-5"><a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">myLabel</span><span class="p">)</span>
+</span></code></pre></div>
+<p><center>
+<img alt="My Image" src="../../images/UILabel.png" />
+</center></p>
+<p><br></p>
+<p><br><br></p>
+<!-- ========== SECTION BREAK ========== -->
+
+<p><br><br></p>
+<h2 id="uilistbox"><strong>UIListBox</strong></h2>
+<p>This is a box that contains a list.
+It is really useful when you want to select something from a set of options.
+Or when your actual behaviour, depends on that option.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">mset</span>
+</span><span id="__span-54-2"><a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>
+</span><span id="__span-54-3"><a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="n">window</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIWindow</span><span class="p">(</span><span class="s2">&quot;Test UI&quot;</span><span class="p">)</span>
+</span><span id="__span-54-4"><a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a><span class="n">myList</span> <span class="o">=</span> <span class="n">mset</span><span class="o">.</span><span class="n">UIListBox</span><span class="p">(</span><span class="s2">&quot;Name of the list&quot;</span><span class="p">)</span> <span class="c1"># 👈 remember to actually add a name</span>
+</span><span id="__span-54-5"><a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a>
+</span><span id="__span-54-6"><a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="n">myList</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s2">&quot;Item 1&quot;</span><span class="p">)</span>
+</span><span id="__span-54-7"><a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a><span class="n">myList</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s2">&quot;Item 2&quot;</span><span class="p">)</span>
+</span><span id="__span-54-8"><a id="__codelineno-54-8" name="__codelineno-54-8" href="#__codelineno-54-8"></a><span class="n">myList</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s2">&quot;Item 3&quot;</span><span class="p">)</span>
+</span><span id="__span-54-9"><a id="__codelineno-54-9" name="__codelineno-54-9" href="#__codelineno-54-9"></a>
+</span><span id="__span-54-10"><a id="__codelineno-54-10" name="__codelineno-54-10" href="#__codelineno-54-10"></a><span class="n">window</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Notice this is just a simple list of strings for demonstration purposes.</p>
+<p><center>
+<img alt="My Image" src="../../images/UIListBox.png" />
+</center></p>
+<p><br></p>
+<h3 id="instance-variables_7">Instance variables</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="n">var</span> <span class="n">onMenuOpen</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Callback that triggers when the list is opened</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="n">var</span> <span class="n">onSelect</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Callback that triggers when you confirm the selection of an item</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="n">var</span> <span class="n">selectedItem</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Returns the current selected item in the ListBox.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="n">var</span> <span class="n">title</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">The text title of the ListBox.</p>
+
+<h3 id="methods_2">Methods</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">addItem</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Adds an item with the label specified to the ListBox.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">clearItems</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Removes all items from this ListBox.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">selectItemByName</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Selects the item that matches the name specified.</p>
+
+<div class="language-python highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">selectNone</span><span class="p">()</span>
+</span></code></pre></div>
+<p style="text-indent: 30px;">Select no item on the list.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+<footer class="md-footer">
+    <div class="md-footer__inner">
+        <p> 🚀 Created by Mauro Fuentes - All Rights Reserved.</p>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "navigation.expand", "navigation.top", "navigation.tracking", "navigation.path", "navigation.prune", "search.highlight", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

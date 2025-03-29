@@ -1,0 +1,50 @@
+[data-md-color-scheme="naranja"] {
+
+  /* Header background color */
+  --md-primary-fg-color: #ff6e26; 
+
+  /*  Header letters */
+  --md-primary-bg-color: #191919; 
+
+  /* hover over color */
+  --md-accent-fg-color: #e64900;  
+
+  /* Selection in the search box */
+  --md-accent-fg-color--transparent: #d0d0d0;
+
+  /* --md-primary-fg-color--light: #1fb93d; */
+  /* --md-primary-fg-color--dark:  #3b4e00; */
+
+  /* Search letters */
+  /*  --md-primary-bg-color--light: #fba208;   */
+
+  /* --md-text-color: #3b4e00; */
+  /* --md-text-color-muted: #12e35b;*/
+  /* --md-text-color--light: #12e35b; */
+
+  /* --md-nav-bg-color: #12e35b; */
+
+  /* --md-nav-link-color: #12e35b; */
+
+  /* --md-nav-link-hover-color: #80ff00; */
+
+  /* --md-nav-link-active-color: #12e35b;  */
+
+  /* Code background */
+  /* --md-code-bg-color: #dedede;  */
+
+  /* Noticeable in charts */
+  /* --md-code-fg-color:  #2b2b2b;  */
+
+  /* --md-code-keyword-color: #36f30b; */
+
+  /* --md-code-string-color: #1bd1ed; */
+
+  /* --md-sidebar-bg-color: #2bff00; */
+  /* --md-sidebar-link-color: #00ff11; */
+
+
+  /* --md-typeset-table-color:            hsla(0, 0%, 0%, 0.12); */
+  /* --md-typeset-table-color--light:     hsla(0, 0%, 0%, 0.035); */
+
+}

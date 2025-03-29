@@ -1,0 +1,33 @@
+
+!!! note
+    This is a note.
+
+!!! tip
+    This is a tip.
+
+!!! warning
+    Be careful! This is a warning.
+
+!!! danger
+    This is very important! Pay attention.
+
+!!! info
+    Some general information.
+
+==This was marked (highlight)==
+^^This was inserted (underline)^^
+~~This was deleted (strikethrough)~~
+
+```python
+```
+```py
+```
+
+```python linenums="1" title="code"
+
+    this will be marked
+this not
+
+
+
+<p style="text-indent: 30px;">Controls the display of the object's children in the outline view.</p>
